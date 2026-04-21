@@ -1,0 +1,228 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #0a0f0d;
+    color: #F4F1EC;
+}
+
+/* NAVBAR */
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #111;
+    border-bottom: 2px solid #C65A2E;
+}
+
+.logo {
+    color: #F4F1EC;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #C65A2E;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #C65A2E;
+}
+
+/* HERO */
+.hero {
+    height: 420px;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #C65A2E;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    color: #F4F1EC;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* MAIN BODY */
+.main-body {
+    width: 1200px;
+    margin: 60px auto;
+}
+
+/* TEXT */
+h2 {
+    color: #C65A2E;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2F6F73;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #D8D3CC;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* LINKS */
+.links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.links a {
+    color: #2F6F73;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: #C65A2E;
+}
+
+/* IMAGES */
+img {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* INFOGRAPHIC */
+.infographic-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.infographic-img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.infographic-img:hover {
+    transform: scale(1.02);
+}
+
+/* DIVIDERS */
+hr {
+    border: none;
+    height: 1px;
+    background: #D8D3CC;
+    margin: 40px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background: #111;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #888;
+}
+
+/* ========================= */
+/* WORKS CITED STYLING */
+/* ========================= */
+
+.citation-section {
+    margin-bottom: 60px;
+}
+
+.citation-section h2 {
+    color: #C65A2E;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D8D3CC;
+    padding-bottom: 10px;
+}
+
+.citation-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.citation-list li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #111;
+    border-left: 4px solid #2F6F73;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.citation-list li:hover {
+    background: #1a1a1a;
+    transform: translateX(5px);
+}
+
+.citation-list a {
+    color: #2F6F73;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.citation-list a:hover {
+    color: #C65A2E;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 1200px) {
+    .main-body {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .nav-links a {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+}
